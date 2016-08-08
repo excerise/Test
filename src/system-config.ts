@@ -7,9 +7,27 @@
 /***********************************************************************************************
  * User Configuration.
  **********************************************************************************************/
-/** Map relative paths to URLs. */
+//Map relative paths to URLs. 
 const map: any = {
+  //'@angular2-material': 'vendor/@angular2-material'
 };
+
+/** // put the names of any of your Material components here
+const materialPkgs:string[] = [
+  'core',
+  'button',
+  'card',
+  // 'icon',
+  // 'list',
+  // 'card',
+  // 'input',
+  // 'checkbox',
+  // 'grid-list'
+];
+
+materialPkgs.forEach((pkg) => {
+  packages[`@angular2-material/${pkg}`] = {main: `${pkg}.js`};
+});*/
 
 /** User packages configuration. */
 const packages: any = {
@@ -36,6 +54,7 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/my-new-component',
   /** @cli-barrel */
 ];
 
